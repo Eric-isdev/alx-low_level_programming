@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  *  * print_to_98 - prints numbers to 98
  *   * @n: first parameter
@@ -7,9 +7,9 @@
  *      * Return: Always (0).
  *       */
 
-void print_to_98(int n)
-{
-		int end;
+		void print_to_98(int n)
+		{
+			int end;
 
 			end = 98;
 
@@ -28,13 +28,13 @@ void print_to_98(int n)
 																												if (n >= -9 && n <= 9)
 																																	{
 																																							if (n < 0)
-																																													{
-																																																				_putchar('-');
-																																																										_putchar((n * -1) + '0');
+																																												{
+																																												_putchar('-');
+																																												_putchar((n * -1) + '0');
 																																																																_putchar(',');
 																																																																						_putchar(' ');
-																																																																											}
-																																												else if (n >= 0)
+																																																																									}
+																																										else if (n >= 0)
 																																																		{
 																																																									_putchar(n + '0');
 																																																															_putchar(',');
