@@ -1,24 +1,41 @@
 #include "main.h"
 
 /**
- *  * puts2 - print characte
+ *  * puts_half - print half
  *   * @str: input string
  *    *
- *     * Description: prints character of a string, starting first character
- *      * Return: Always (0)
+ *     * Description: prints half of a string
+ *      * Return: Always (0);
  *       */
 
-void puts2(char *str)
+void puts_half(char *str)
 {
 		int i;
+			int diff;
 
-			while (str[i] != '\0')
-					{
-								if (i % 2 == 0)
-											{
-															_putchar(str[i]);
-																	}
-										i++;
-											}
-				_putchar('\n');
+				while (str[i] != '\0')
+						{
+									i++;
+										}
+					if (i % 2 == 1)
+							{
+										diff = (i + 1) / 2;
+
+												while (str[diff] != '\0')
+															{
+																			_putchar(str[diff]);
+																						diff++;
+																								}
+													}
+						else
+								{
+											diff = (i / 2);
+
+													while (str[diff] != '\0')
+																{
+																				_putchar(str[diff]);
+																							diff++;
+																									}
+														}
+							_putchar('\n');
 }
